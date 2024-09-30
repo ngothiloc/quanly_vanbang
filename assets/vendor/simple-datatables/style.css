@@ -1,3 +1,4 @@
+/* Wrapper cho bảng */
 .datatable-wrapper.no-header .datatable-container {
 	border-top: 1px solid #d9d9d9;
 }
@@ -6,33 +7,43 @@
 	border-bottom: 1px solid #d9d9d9;
 }
 
+/* Cấu hình cho phần trên và dưới của bảng */
 .datatable-top,
 .datatable-bottom {
-	padding: 8px 10px;
+	padding: 10px 10px;
+	border-bottom: 1px solid #d9d9d9;
+	border-top: 1px solid #d9d9d9;
 }
 
-.datatable-top > nav:first-child,
-.datatable-top > div:first-child,
-.datatable-bottom > nav:first-child,
-.datatable-bottom > div:first-child {
+/* Căn chỉnh phần tử trong bảng */
+.datatable-top>nav:first-child,
+.datatable-top>div:first-child,
+.datatable-bottom>nav:first-child,
+.datatable-bottom>div:first-child {
 	float: left;
 }
 
-.datatable-top > nav:last-child,
-.datatable-top > div:not(first-child),
-.datatable-bottom > nav:last-child,
-.datatable-bottom > div:last-child {
+.datatable-top>nav:last-child,
+.datatable-top>div:not(:first-child),
+.datatable-bottom>nav:last-child,
+.datatable-bottom>div:last-child {
 	float: right;
 }
 
+/* Cấu hình cho selector và input */
 .datatable-selector {
 	padding: 6px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
 }
 
 .datatable-input {
 	padding: 6px 12px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
 }
 
+/* Cấu hình cho thông tin bảng */
 .datatable-info {
 	margin: 7px 0;
 }
@@ -41,6 +52,7 @@
 .datatable-pagination ul {
 	margin: 0;
 	padding-left: 0;
+	display: flex;
 }
 
 .datatable-pagination li {
@@ -49,7 +61,7 @@
 }
 
 .datatable-pagination li.datatable-hidden {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 .datatable-pagination a,
@@ -61,12 +73,14 @@
 	position: relative;
 	text-decoration: none;
 	color: #333;
-    cursor: pointer;
+	cursor: pointer;
+	border-radius: 4px;
 }
 
 .datatable-pagination a:hover,
 .datatable-pagination button:hover {
-	background-color: #d9d9d9;
+	background-color: #e0e0e0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .datatable-pagination .datatable-active a,
@@ -75,7 +89,7 @@
 .datatable-pagination .datatable-active button,
 .datatable-pagination .datatable-active button:focus,
 .datatable-pagination .datatable-active button:hover {
-	background-color: #d9d9d9;
+	background-color: #c0c0c0;
 	cursor: default;
 }
 
@@ -87,8 +101,8 @@
 .datatable-pagination .datatable-disabled button,
 .datatable-pagination .datatable-disabled button:focus,
 .datatable-pagination .datatable-disabled button:hover {
-    pointer-events: none;
-    cursor: default;
+	pointer-events: none;
+	cursor: default;
 }
 
 .datatable-pagination .datatable-disabled a,
@@ -98,42 +112,54 @@
 .datatable-pagination .datatable-disabled button:focus,
 .datatable-pagination .datatable-disabled button:hover {
 	cursor: not-allowed;
-	opacity: 0.4;
+	opacity: 0.6;
 }
 
-.datatable-pagination .datatable-pagination a,
-.datatable-pagination .datatable-pagination button {
-	font-weight: bold;
-}
-
-/* TABLE */
+/* Table */
 .datatable-table {
 	max-width: 100%;
 	width: 100%;
 	border-spacing: 0;
 	border-collapse: separate;
+	background: #ffffff;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+	margin-top: 12px;
 }
 
-.datatable-table > tbody > tr > td,
-.datatable-table > tbody > tr > th,
-.datatable-table > tfoot > tr > td,
-.datatable-table > tfoot > tr > th,
-.datatable-table > thead > tr > td,
-.datatable-table > thead > tr > th {
+.datatable-table>tbody>tr:nth-child(odd) {
+	background-color: #fef7f7;
+	/* màu hồng nhạt */
+}
+
+.datatable-table>tbody>tr:nth-child(even) {
+	background-color: #ffffff;
+	/* màu trắng */
+}
+
+.datatable-table>tbody>tr>td,
+.datatable-table>tbody>tr>th,
+.datatable-table>tfoot>tr>td,
+.datatable-table>tfoot>tr>th,
+.datatable-table>thead>tr>td,
+.datatable-table>thead>tr>th {
 	vertical-align: top;
-	padding: 8px 10px;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
 }
 
-.datatable-table > thead > tr > th {
+.datatable-table>thead>tr>th {
 	vertical-align: bottom;
 	text-align: left;
-	border-bottom: 1px solid #d9d9d9;
+	background-color: #007bff;
+	color: white;
 }
 
-.datatable-table > tfoot > tr > th {
+.datatable-table>tfoot>tr>th {
 	vertical-align: bottom;
 	text-align: left;
-	border-top: 1px solid #d9d9d9;
+	border-top: 1px solid #ffffff;
 }
 
 .datatable-table th {
@@ -148,16 +174,18 @@
 
 .datatable-table th button,
 .datatable-pagination-list button {
-    color: inherit;
-    border: 0;
-    background-color: inherit;
-    cursor: pointer;
-    text-align: inherit;
-    font-weight: inherit;
-    font-size: inherit;
+	color: inherit;
+	border: 0;
+	background-color: inherit;
+	cursor: pointer;
+	text-align: inherit;
+	font-weight: inherit;
+	font-size: inherit;
 }
 
-.datatable-sorter, .datatable-filter {
+/* Sorter và filter */
+.datatable-sorter,
+.datatable-filter {
 	display: inline-block;
 	height: 100%;
 	position: relative;
@@ -173,61 +201,73 @@
 	right: 4px;
 	border-left: 4px solid transparent;
 	border-right: 4px solid transparent;
-	opacity: 0.2;
+	opacity: 0.4;
 }
 
-
 .datatable-sorter::before {
-	border-top: 4px solid #000;
-	bottom: 0px;
+	border-top: 4px solid #ffffff;
+	bottom: 0;
 }
 
 .datatable-sorter::after {
-	border-bottom: 4px solid #000;
+	border-bottom: 4px solid #ffffff;
 	border-top: 4px solid transparent;
-	top: 0px;
+	top: 0;
 }
 
 .datatable-ascending .datatable-sorter::after,
 .datatable-descending .datatable-sorter::before,
 .datatable-ascending .datatable-filter::after,
 .datatable-descending .datatable-filter::before {
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 .datatable-filter::before {
-    content: "";
-    position: absolute;
-    right: 4px;
-    opacity: 0.2;
-    width: 0;
-    height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-	border-radius: 50%;
-    border-top: 10px solid #000;
-    top: 25%;
+	content: "";
+	position: absolute;
+	right: 4px;
+	opacity: 0.4;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 10px solid #007bff;
+	top: 25%;
 }
 
 .datatable-filter-active .datatable-filter::before {
-    opacity: 0.6;
+	opacity: 0.8;
 }
 
+/* Hiệu ứng hover cho hàng của bảng */
+.datatable-table tbody tr:hover {
+	background-color: #f0f0f0;
+	cursor: pointer;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hiệu ứng hover cho các ô trong hàng */
+.datatable-table tbody tr:hover td {
+	background-color: #f5f5f5;
+}
+
+/* Empty state */
 .datatable-empty {
 	text-align: center;
 }
 
-.datatable-top::after, .datatable-bottom::after {
+.datatable-top::after,
+.datatable-bottom::after {
 	clear: both;
 	content: " ";
 	display: table;
 }
 
-table.datatable-table:focus tr.datatable-cursor > td:first-child {
-	border-left: 3px blue solid;
+table.datatable-table:focus tr.datatable-cursor>td:first-child {
+	border-left: 3px solid #007bff;
 }
 
 table.datatable-table:focus {
-	outline: solid 1px black;
-    outline-offset: -1px;
+	outline: solid 1px #007bff;
+	outline-offset: -1px;
 }

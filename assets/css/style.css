@@ -1049,6 +1049,21 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# thanh nổi trang chủ
+--------------------------------------------------------------*/
+.hover-card .card.info-card.customers-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Hiệu ứng nổi lên */
+}
+
+.hover-card .card.info-card.customers-card:hover {
+  transform: translateY(-10px);
+  /* Nổi lên khi di chuột vào */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  /* Bóng đổ khi nổi lên */
+}
+
+/*--------------------------------------------------------------
 # F.A.Q Page
 --------------------------------------------------------------*/
 .faq .basic h6 {
