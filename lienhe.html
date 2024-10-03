@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Liên hệ - UTT</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="">
+                <span class="d-none d-lg-block">UTT</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <div class="search-bar">
+            <form class="search-form d-flex align-items-center" method="POST" action="#">
+                <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+                <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+            </form>
+        </div><!-- End Search Bar -->
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li><!-- End Search Icon-->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge bg-primary badge-number">4</span>
+                    </a><!-- End Notification Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                        <li class="dropdown-header">
+                            You have 4 new notifications
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-exclamation-circle text-warning"></i>
+                            <div>
+                                <h4>Lorem Ipsum</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>30 min. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-x-circle text-danger"></i>
+                            <div>
+                                <h4>Atque rerum nesciunt</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>1 hr. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-check-circle text-success"></i>
+                            <div>
+                                <h4>Sit rerum fuga</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>2 hrs. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-info-circle text-primary"></i>
+                            <div>
+                                <h4>Dicta reprehenderit</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>4 hrs. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-footer">
+                            <a href="#">Show all notifications</a>
+                        </li>
+
+                    </ul><!-- End Notification Dropdown Items -->
+
+                </li><!-- End Notification Nav -->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-chat-left-text"></i>
+                        <span class="badge bg-success badge-number">3</span>
+                    </a><!-- End Messages Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+                        <li class="dropdown-header">
+                            You have 3 new messages
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>Maria Hudson</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>4 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>Anna Nelson</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>6 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>David Muldon</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>8 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="dropdown-footer">
+                            <a href="#">Show all messages</a>
+                        </li>
+
+                    </ul><!-- End Messages Dropdown Items -->
+
+                </li><!-- End Messages Nav -->
+
+                <li class="nav-item dropdown pe-3">
+                
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="assets/img/logo.png" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">Ngô Tiến Lộc</span>
+                    </a><!-- End Profile Iamge Icon -->
+                
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6>Ngô Tiến Lộc</h6>
+                            <span>Quản lý</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="hoso.html">
+                                <i class="bi bi-person"></i>
+                                <span>Hồ sơ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="hoso.html">
+                                <i class="bi bi-gear"></i>
+                                <span>Cài đặt tài khoản</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                                <i class="bi bi-question-circle"></i>
+                                <span>Bạn cần hỗ trợ?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Đăng xuất</span>
+                            </a>
+                        </li>
+                
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="index.html">
+                    <i class="bi bi-house-door-fill"></i>
+                    <span>Trang chủ</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#bangtotnghiep-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-mortarboard-fill"></i><span>Quản lý bằng tốt nghiệp</span><i
+                        class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="bangtotnghiep-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="totnghiep-chuaduyet.html">
+                            <i class="bi bi-circle-fill"></i><span>Bằng tốt nghiệp chờ duyệt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="totnghiep-daduyet.html">
+                            <i class="bi bi-circle-fill"></i><span>Bằng tốt nghiệp đã duyệt</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li><!-- End Components Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#chungchi-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-patch-check-fill"></i><span>Quản lý chứng chỉ</span><i
+                        class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="chungchi-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="chungchi-chuaduyet.html">
+                            <i class="bi bi-circle-fill"></i><span>Chứng chỉ chờ duyệt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chungchi-daduyet.html">
+                            <i class="bi bi-circle-fill"></i><span>Chứng chỉ đã duyệt</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li><!-- End chungchi Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#danhmuc-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-grid-fill"></i><span>Danh mục</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="danhmuc-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="danhmuc-bangtotnghiep.html">
+                            <i class="bi bi-circle-fill"></i><span>Danh mục bằng tốt nghiệp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="danhmuc-chungchi.html">
+                            <i class="bi bi-circle-fill"></i><span>Danh mục chứng ch</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li><!-- End chungchi Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="tonghop.html">
+                    <i class="bi bi-box-seam-fill"></i>
+                    <span>Tổng hợp</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="tintuc.html">
+                    <i class="bi bi-globe"></i><span>Tin tức</span>
+                </a>
+            </li><!-- End Icons Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link " href="lienhe.html">
+                    <i class="bi bi-telephone"></i><span>Liên hệ</span>
+                </a>
+            </li><!-- End Icons Nav -->
+            <hr>
+            <li class="nav-item"></li>
+                <a class="nav-link collapsed" href="hoso.html">
+                    <i class="bi bi-person-lines-fill"></i><span>Hồ sơ</span>
+                </a>
+            </li><!-- End Icons Nav -->
+            <li class="nav-item"></li>
+                <a class="nav-link collapsed" href="pages-faq.html">
+                    <i class="bi bi-patch-question-fill"></i><span>Hướng dẫn sử dụng</span>
+                </a>
+            </li><!-- End Icons Nav -->
+
+
+        </ul>
+
+    </aside><!-- End Sidebar-->
+
+
+    <!-- ======= Main ======= -->
+
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>Quản lý bằng tốt nghiệp, chứng chỉ của trường đại học</h1>
+            <!-- Slides with indicators -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin: 10px 0 10px 0">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/banner-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/banner-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/banner-3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div><!-- End Slides with indicators -->
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Liên hệ</a></li>
+                    <li class="breadcrumb-item active">Thông tin đơn vị</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <section class="section contact">
+
+            <div class="col gy-4">
+
+                <div class="col-xl-12">
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="info-box card">
+                                <i class="bi bi-geo-alt"></i>
+                                <h3>Địa chỉ</h3>
+                                <p>54 Triều Khúc, Quận Thanh Xuân, Hà Nội<br>278 Lam Sơn, Đồng Tâm, Vĩnh Yên, Vĩnh Phúc
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="info-box card">
+                                <i class="bi bi-telephone"></i>
+                                <h3>Số điện thoại</h3>
+                                <p>(+84) 37 8976 135<br>(+84) 243 854 4264</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="info-box card">
+                                <i class="bi bi-envelope"></i>
+                                <h3>Email</h3>
+                                <p>congnghegtvtkhoacntt@edu.vn<br>dhcongnghegtvt@utt.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-12">
+                    <div class="card p-4">
+                        <b
+                            style="text-align: center;   color: var(--Midnight-Blue, #012970);font-family:'Open Sans'; font-size: 1.6rem; padding-bottom: 15px;">Nhập
+                            thông tin cần hỗ trợ hoặc tư vấn</b>
+                        <div class="row gy-4">
+                            <!-- Form bên trái -->
+                            <div class="col-lg-6">
+                                <form id="contactForm" action="lienhe.php" method="post">
+                                    <div class="row gy-4">
+                                        <div class="col-md-6">
+                                            <input type="text" name="name" class="form-control" placeholder="Họ tên"
+                                                required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="email" class="form-control" name="email" placeholder="Email"
+                                                required>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control" name="subject" placeholder="Địa chỉ"
+                                                required>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control" name="tieude" placeholder="Tiêu đề"
+                                                required>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea class="form-control" name="message" rows="6"
+                                                placeholder="Nhập thông tin cần hỗ trợ tư vấn" required></textarea>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                            <div class="spinner-border text-success" role="status"
+                                                style="display:none;">
+                                                <span class="visually-hidden">Loading...</span>Đang tải...
+                                            </div>
+                                            <div class="error-message" style="display:none;"></div>
+                                            <div class="sent-message" style="display:none;">
+                                                <div class="alert alert-success bg-success text-light border-0 alert-dismissible fade show"
+                                                    role="alert">
+                                                    Thông tin đã được gửi, cảm ơn bạn đã đóng góp!
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Gửi thông tin</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Bản đồ bên phải -->
+                            <div class="col-lg-6">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7985.265749259576!2d105.7969023744393!3d20.98228113299547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acc6bdc7f95f%3A0x58ffc66343a45247!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgR2lhbyB0aMO0bmcgVuG6rW4gdOG6o2k!5e0!3m2!1svi!2s!4v1727768085982!5m2!1svi!2s"
+                                    width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault(); // Ngăn chặn hành động gửi form mặc định
+
+                var spinner = document.querySelector('.spinner-border');
+                var successMessage = document.querySelector('.sent-message');
+                var errorMessage = document.querySelector('.error-message');
+
+                // Hiển thị spinner
+                spinner.style.display = 'block';
+
+                // Gửi dữ liệu form qua AJAX
+                var formData = new FormData(this);
+
+                fetch('lienhe.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.text())
+                    .then(data => {
+                        spinner.style.display = 'none'; // Ẩn spinner
+                        successMessage.style.display = 'block'; // Hiển thị thông báo thành công
+
+                        // Ẩn thông báo sau 10 giây
+                        setTimeout(function () {
+                            successMessage.style.display = 'none';
+                        }, 10000);
+                    })
+                    .catch(error => {
+                        spinner.style.display = 'none'; // Ẩn spinner
+                        errorMessage.style.display = 'block'; // Hiển thị thông báo lỗi
+                        errorMessage.textContent = 'Đã xảy ra lỗi, vui lòng thử lại!';
+                    });
+            });
+        </script>
+        <script>
+            document.getElementById('').addEventListener('submit', function (event) {
+                event.preventDefault(); // Ngăn chặn gửi form mặc định
+
+                var spinner = document.querySelector('.spinner-border');
+                spinner.style.display = 'block'; // Hiển thị spinner
+
+                // Gửi yêu cầu AJAX hoặc xử lý gửi form ở đây
+
+                // Giả sử gửi thành công, hiển thị thông báo thành công
+                setTimeout(function () {
+                    spinner.style.display = 'none'; // Ẩn spinner
+                    var alertSuccess = document.querySelector('.alert-success');
+                    alertSuccess.style.display = 'block'; // Hiển thị thông báo thành công
+
+                    // Ẩn thông báo sau 10 giây
+                    setTimeout(function () {
+                        alertSuccess.style.display = 'none';
+                    }, 10000);
+                }, 8000); // Giả lập thời gian gửi
+            });
+        </script>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="container-sdt">
+                    <div class="sdt">
+                        Số điện thoại: (+84) 37 8976 135 / (+84) 243 854 4264
+                    </div>
+                </div>
+    
+                <div class="container-email">
+                    <div class="email">
+                        Email: congnghegtvtkhoacntt@edu.vn / dhcongnghegtvt@utt.com
+                    </div>
+                </div>
+    
+                <div class="container-dc">
+                    <div class="dc">
+                        Địa chỉ: 54 Triều Khúc, Quận Thanh Xuân, Thành phố Hà Nội /<br>
+                        278 Lam Sơn, Đồng Tâm, Vĩnh Yên, Vĩnh Phúc
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-right">
+                <div class="text-app-container">
+                    <div class="text-app" style="font-size: medium;">
+                        ĐÃ CÓ TRÊN MỌI NỀN TẢNG
+                    </div>
+                    <div class="container-app">
+                        <a href="#"><img src="assets/img/ios.png" alt="App Store"></a>
+                        <a href="#"><img src="assets/img/gg play.png" alt="Google Play"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-copy">
+            <div class="copy">
+                Copyright © 2024 Trường Đại học Công nghệ Giao thông vận tải. All rights reserved
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- ======= JS ======= -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

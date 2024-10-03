@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Sửa Dữ Liệu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .editable {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <table class="table table-striped datatable">
+            <thead>
+                <tr>
+                    <th style="text-align: center; vertical-align: middle;">STT</th>
+                    <th style="text-align: center; vertical-align: middle;">Danh mục</th>
+                    <th style="text-align: center; vertical-align: middle;">Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center; vertical-align: middle;">01</td>
+                    <td style="text-align: center; vertical-align: middle;" class="editable">Họ và tên</td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm"
+                            onclick="editRow(this)">
+                            <i class="fas fa-edit"></i> <!-- Icon Sửa -->
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#huydanhmuctotnghiep">
+                            <i class="fas fa-trash"></i> <!-- Icon Xóa -->
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; vertical-align: middle;">02</td>
+                    <td style="text-align: center; vertical-align: middle;" class="editable">Ngày sinh</td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm"
+                            onclick="editRow(this)">
+                            <i class="fas fa-edit"></i> <!-- Icon Sửa -->
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#huydanhmuctotnghiep">
+                            <i class="fas fa-trash"></i> <!-- Icon Xóa -->
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; vertical-align: middle;">03</td>
+                    <td style="text-align: center; vertical-align: middle;" class="editable">Giới tính</td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm"
+                            onclick="editRow(this)">
+                            <i class="fas fa-edit"></i> <!-- Icon Sửa -->
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#huydanhmuctotnghiep">
+                            <i class="fas fa-trash"></i> <!-- Icon Xóa -->
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; vertical-align: middle;">04</td>
+                    <td style="text-align: center; vertical-align: middle;" class="editable">Mã sinh viên</td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm"
+                            onclick="editRow(this)">
+                            <i class="fas fa-edit"></i> <!-- Icon Sửa -->
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#huydanhmuctotnghiep">
+                            <i class="fas fa-trash"></i> <!-- Icon Xóa -->
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        let currentRow = null; // Biến lưu giữ hàng đang chỉnh sửa
+        let currentInput = null; // Biến lưu giữ ô nhập liệu hiện tại
+
+        function editRow(button) {
+            const row = button.closest("tr"); // Lấy hàng tương ứng với nút đã nhấn
+            const categoryCell = row.querySelector(".editable"); // Lấy ô danh mục
+
+            // Nếu đã có ô nhập liệu đang mở, không làm gì cả
+            if (currentInput && currentRow !== row) {
+                // Lưu giá trị trước đó
+                saveEdit(currentRow.querySelector(".editable"), currentInput.value);
+            }
+
+            // Nếu đã có hàng đang chỉnh sửa, lưu giá trị và trả lại ô
+            if (currentRow === row) {
+                saveEdit(categoryCell, currentInput.value);
+                return;
+            }
+
+            const currentValue = categoryCell.innerText; // Lưu giá trị hiện tại
+
+            // Tạo ô nhập liệu
+            const input = document.createElement("input");
+            input.type = "text";
+            input.value = currentValue;
+            categoryCell.innerHTML = ""; // Xóa nội dung ô
+            categoryCell.appendChild(input);
+            input.focus();
+            currentInput = input; // Lưu ô nhập liệu hiện tại
+            currentRow = row; // Lưu hàng đang chỉnh sửa
+
+            // Lắng nghe sự kiện khi người dùng nhấn Enter
+            input.addEventListener("keypress", function (event) {
+                if (event.key === "Enter") {
+                    saveEdit(categoryCell, input.value);
+                }
+            });
+
+            // Lắng nghe sự kiện khi người dùng nhấn ra ngoài ô nhập liệu
+            input.addEventListener("blur", function () {
+                saveEdit(categoryCell, input.value);
+            });
+        }
+
+        function saveEdit(cell, newValue) {
+            cell.innerHTML = newValue; // Cập nhật giá trị ô
+            currentRow = null; // Đặt lại biến hàng đang chỉnh sửa
+            currentInput = null; // Đặt lại biến ô nhập liệu hiện tại
+        }
+    </script>
+</body>
+
+</html>

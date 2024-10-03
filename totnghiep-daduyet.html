@@ -211,23 +211,23 @@
                 </li><!-- End Messages Nav -->
 
                 <li class="nav-item dropdown pe-3">
-
+                
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+                        <img src="assets/img/logo.png" alt="Profile" class="rounded-circle">
                         <span class="d-none d-md-block dropdown-toggle ps-2">Ngô Tiến Lộc</span>
                     </a><!-- End Profile Iamge Icon -->
-
+                
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
-                            <h6>Kevin Anderson</h6>
-                            <span>Web Designer</span>
+                            <h6>Ngô Tiến Lộc</h6>
+                            <span>Quản lý</span>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-
+                
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                            <a class="dropdown-item d-flex align-items-center" href="hoso.html">
                                 <i class="bi bi-person"></i>
                                 <span>Hồ sơ</span>
                             </a>
@@ -235,9 +235,9 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-
+                
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                            <a class="dropdown-item d-flex align-items-center" href="hoso.html">
                                 <i class="bi bi-gear"></i>
                                 <span>Cài đặt tài khoản</span>
                             </a>
@@ -245,7 +245,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-
+                
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
                                 <i class="bi bi-question-circle"></i>
@@ -255,14 +255,14 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-
+                
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="#">
                                 <i class="bi bi-box-arrow-right"></i>
                                 <span>Đăng xuất</span>
                             </a>
                         </li>
-
+                
                     </ul><!-- End Profile Dropdown Items -->
                 </li><!-- End Profile Nav -->
 
@@ -278,7 +278,7 @@
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="index.html">
-                    <i class="bi bi-house-door"></i>
+                    <i class="bi bi-house-door-fill"></i>
                     <span>Trang chủ</span>
                 </a>
             </li><!-- End Dashboard Nav -->
@@ -351,18 +351,27 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="tintuc.html">
+                <a class="nav-link collapsed" href="tintuc.html">
                     <i class="bi bi-globe"></i><span>Tin tức</span>
                 </a>
             </li><!-- End Icons Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="lienhe.html">
+                <a class="nav-link collapsed" href="lienhe.html">
                     <i class="bi bi-telephone"></i><span>Liên hệ</span>
                 </a>
             </li><!-- End Icons Nav -->
-
-
+            <hr>
+            <li class="nav-item"></li>
+                <a class="nav-link collapsed" href="hoso.html">
+                    <i class="bi bi-person-lines-fill"></i><span>Hồ sơ</span>
+                </a>
+            </li><!-- End Icons Nav -->
+            <li class="nav-item"></li>
+                <a class="nav-link collapsed" href="pages-faq.html">
+                    <i class="bi bi-patch-question-fill"></i><span>Hướng dẫn sử dụng</span>
+                </a>
+            </li><!-- End Icons Nav -->
 
         </ul>
 
@@ -409,7 +418,7 @@
             </div><!-- End Slides with indicators -->
             <nav>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Quản lý bằng tốt nghiệp</a></li>
+                    <li class="breadcrumb-item"><a href="#">Quản lý bằng tốt nghiệp</a></li>
                     <li class="breadcrumb-item active">Bằng tốt nghiệp đã duyệt</li>
                 </ol>
             </nav>
@@ -443,7 +452,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="text-align: center; vertical-align: middle;">Trương Văn A</td>
+                                        <td style="text-align: center; vertical-align: middle;">Trương Văn Anh</td>
                                         <td style="text-align: center; vertical-align: middle;">12/01/2001</td>
                                         <td style="text-align: center; vertical-align: middle;">Nam</td>
                                         <td style="text-align: center; vertical-align: middle;">70DCHT0101</td>
@@ -454,16 +463,18 @@
                                             <span class="badge bg-success">ĐÃ DUYỆT</span>
                                         </td>
                                         <td style="text-align: center; vertical-align: middle;">
-                                            <button type="submit" name="add_news" class="btn btn-primary btn-sm">
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="truong.van.anh@gmail.com"
+                                                data-image="assets/img/avatars/1.jpg">
                                                 <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
-                                            </button>
-                                            <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
+                                            </button>                                                                                      
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare" style="margin: 10px 0 10px 0">
                                                 <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
-                                            </button>
+                                            </button>                                           
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center; vertical-align: middle;">Trương Văn B</td>
+                                        <td style="text-align: center; vertical-align: middle;">Trương Văn Bình</td>
                                         <td style="text-align: center; vertical-align: middle;">13/02/2001</td>
                                         <td style="text-align: center; vertical-align: middle;">Nam</td>
                                         <td style="text-align: center; vertical-align: middle;">70DCHT0102</td>
@@ -474,16 +485,19 @@
                                             <span class="badge bg-success">ĐÃ DUYỆT</span>
                                         </td>
                                         <td style="text-align: center; vertical-align: middle;">
-                                            <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                <i class="fas fa-eye"></i>
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="truong.van.anh@gmail.com"
+                                                data-image="assets/img/avatars/7.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
                                             </button>
-                                            <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                <i class="fas fa-paper-plane"></i>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center; vertical-align: middle;">Nguyễn Thị C</td>
+                                        <td style="text-align: center; vertical-align: middle;">Nguyễn Thị Chức</td>
                                         <td style="text-align: center; vertical-align: middle;">14/03/2001</td>
                                         <td style="text-align: center; vertical-align: middle;">Nữ</td>
                                         <td style="text-align: center; vertical-align: middle;">70DCHT0103</td>
@@ -494,16 +508,19 @@
                                             <span class="badge bg-success">ĐÃ DUYỆT</span>
                                         </td>
                                         <td style="text-align: center; vertical-align: middle;">
-                                            <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                <i class="fas fa-eye"></i>
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="nguyen.thi.cuc@gmail.com"
+                                                data-image="assets/img/avatars/2.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
                                             </button>
-                                            <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                <i class="fas fa-paper-plane"></i>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center; vertical-align: middle;">Lê Văn D</td>
+                                        <td style="text-align: center; vertical-align: middle;">Lê Văn Dương</td>
                                         <td style="text-align: center; vertical-align: middle;">15/04/2001</td>
                                         <td style="text-align: center; vertical-align: middle;">Nam</td>
                                         <td style="text-align: center; vertical-align: middle;">70DCHT0104</td>
@@ -514,16 +531,19 @@
                                             <span class="badge bg-success">ĐÃ DUYỆT</span>
                                         </td>
                                         <td style="text-align: center; vertical-align: middle;">
-                                            <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                <i class="fas fa-eye"></i>
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="le.van.duong@gmail.com"
+                                                data-image="assets/img/avatars/1.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
                                             </button>
-                                            <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                <i class="fas fa-paper-plane"></i>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center; vertical-align: middle;">Nguyễn Văn I</td>
+                                        <td style="text-align: center; vertical-align: middle;">Nguyễn Văn Giang</td>
                                         <td style="text-align: center; vertical-align: middle;">20/09/2001</td>
                                         <td style="text-align: center; vertical-align: middle;">Nam</td>
                                         <td style="text-align: center; vertical-align: middle;">70DCHT0109</td>
@@ -534,16 +554,19 @@
                                             <span class="badge bg-success">ĐÃ DUYỆT</span>
                                         </td>
                                         <td style="text-align: center; vertical-align: middle;">
-                                            <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                <i class="fas fa-eye"></i>
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="nguyen.van.giang@gmail.com"
+                                                data-image="assets/img/avatars/3.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
                                             </button>
-                                            <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                <i class="fas fa-paper-plane"></i>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center; vertical-align: middle;">Trần Thị J</td>
+                                        <td style="text-align: center; vertical-align: middle;">Trần Thị Giang</td>
                                         <td style="text-align: center; vertical-align: middle;">21/10/2001</td>
                                         <td style="text-align: center; vertical-align: middle;">Nữ</td>
                                         <td style="text-align: center; vertical-align: middle;">70DCHT0110</td>
@@ -554,16 +577,19 @@
                                             <span class="badge bg-success">ĐÃ DUYỆT</span>
                                         </td>
                                         <td style="text-align: center; vertical-align: middle;">
-                                            <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                <i class="fas fa-eye"></i>
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="tran.thi.giang@gmail.com"
+                                                data-image="assets/img/avatars/4.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
                                             </button>
-                                            <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                <i class="fas fa-paper-plane"></i>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center; vertical-align: middle;">Lê Văn K</td>
+                                        <td style="text-align: center; vertical-align: middle;">Lê Văn Khánh</td>
                                         <td style="text-align: center; vertical-align: middle;">22/11/2001</td>
                                         <td style="text-align: center; vertical-align: middle;">Nam</td>
                                         <td style="text-align: center; vertical-align: middle;">70DCHT0111</td>
@@ -574,16 +600,19 @@
                                             <span class="badge bg-success">ĐÃ DUYỆT</span>
                                         </td>
                                         <td style="text-align: center; vertical-align: middle;">
-                                            <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                <i class="fas fa-eye"></i>
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="le.van.khanh@gmail.com"
+                                                data-image="assets/img/avatars/5.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
                                             </button>
-                                            <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                <i class="fas fa-paper-plane"></i>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center; vertical-align: middle;">Nguyễn Thị L</td>
+                                        <td style="text-align: center; vertical-align: middle;">Nguyễn Thị Liễu</td>
                                         <td style="text-align: center; vertical-align: middle;">23/12/2001</td>
                                         <td style="text-align: center; vertical-align: middle;">Nữ</td>
                                         <td style="text-align: center; vertical-align: middle;">70DCHT0112</td>
@@ -594,16 +623,19 @@
                                             <span class="badge bg-success">ĐÃ DUYỆT</span>
                                         </td>
                                         <td style="text-align: center; vertical-align: middle;">
-                                            <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                <i class="fas fa-eye"></i>
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="nguyen.thi.lieu@gmail.com"
+                                                data-image="assets/img/avatars/6.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
                                             </button>
-                                            <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                <i class="fas fa-paper-plane"></i>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center; vertical-align: middle;">Trương Văn M</td>
+                                        <td style="text-align: center; vertical-align: middle;">Trương Văn Mạnh</td>
                                         <td style="text-align: center; vertical-align: middle;">24/01/2002</td>
                                         <td style="text-align: center; vertical-align: middle;">Nam</td>
                                         <td style="text-align: center; vertical-align: middle;">70DCHT0113</td>
@@ -614,16 +646,19 @@
                                             <span class="badge bg-success">ĐÃ DUYỆT</span>
                                         </td>
                                         <td style="text-align: center; vertical-align: middle;">
-                                            <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                <i class="fas fa-eye"></i>
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="truong.van.manh@gmail.com"
+                                                data-image="assets/img/avatars/8.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
                                             </button>
-                                            <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                <i class="fas fa-paper-plane"></i>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center; vertical-align: middle;">Lê Thị N</td>
+                                        <td style="text-align: center; vertical-align: middle;">Lê Thị Nụ</td>
                                         <td style="text-align: center; vertical-align: middle;">25/02/2002</td>
                                         <td style="text-align: center; vertical-align: middle;">Nữ</td>
                                         <td style="text-align: center; vertical-align: middle;">70DCHT0114</td>
@@ -634,16 +669,19 @@
                                             <span class="badge bg-success">ĐÃ DUYỆT</span>
                                         </td>
                                         <td style="text-align: center; vertical-align: middle;">
-                                            <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                <i class="fas fa-eye"></i>
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="le.thi.nu@gmail.com"
+                                                data-image="assets/img/avatars/9.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
                                             </button>
-                                            <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                <i class="fas fa-paper-plane"></i>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center; vertical-align: middle;">Nguyễn Văn O</td>
+                                        <td style="text-align: center; vertical-align: middle;">Nguyễn Văn Quyết</td>
                                         <td style="text-align: center; vertical-align: middle;">26/03/2002</td>
                                         <td style="text-align: center; vertical-align: middle;">Nam</td>
                                         <td style="text-align: center; vertical-align: middle;">70DCHT0115</td>
@@ -654,119 +692,141 @@
                                             <span class="badge bg-success">ĐÃ DUYỆT</span>
                                         </td>
                                         <td style="text-align: center; vertical-align: middle;">
-                                            <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                <i class="fas fa-eye"></i>
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="nguyen.van.quyet@gmail.com"
+                                                data-image="assets/img/avatars/10.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
                                             </button>
-                                            <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                <i class="fas fa-paper-plane"></i>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
                                             </button>
                                         </td>
                                     </tr>
-                                                                        <tr></tr>
-                                                                            <td style="text-align: center; vertical-align: middle;">Lê Văn K</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">22/11/2001</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Nam</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">70DCHT0111</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Giỏi</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Công nghệ thông tin</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">18001244</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">
-                                                                                <span class="badge bg-success">ĐÃ DUYỆT</span>
-                                                                            </td>
-                                                                            <td style="text-align: center; vertical-align: middle;">
-                                                                                <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                                                    <i class="fas fa-eye"></i>
-                                                                                </button>
-                                                                                <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                                                    <i class="fas fa-paper-plane"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="text-align: center; vertical-align: middle;">Nguyễn Thị L</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">23/12/2001</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Nữ</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">70DCHT0112</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Khá</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">An toàn thông tin</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">18001245</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">
-                                                                                <span class="badge bg-success">ĐÃ DUYỆT</span>
-                                                                            </td>
-                                                                            <td style="text-align: center; vertical-align: middle;">
-                                                                                <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                                                    <i class="fas fa-eye"></i>
-                                                                                </button>
-                                                                                <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                                                    <i class="fas fa-paper-plane"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="text-align: center; vertical-align: middle;">Trương Văn M</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">24/01/2002</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Nam</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">70DCHT0113</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Trung bình</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Công nghệ phần mềm</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">18001246</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">
-                                                                                <span class="badge bg-success">ĐÃ DUYỆT</span>
-                                                                            </td>
-                                                                            <td style="text-align: center; vertical-align: middle;">
-                                                                                <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                                                    <i class="fas fa-eye"></i>
-                                                                                </button>
-                                                                                <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                                                    <i class="fas fa-paper-plane"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="text-align: center; vertical-align: middle;">Lê Thị N</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">25/02/2002</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Nữ</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">70DCHT0114</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Giỏi</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Khoa học dữ liệu</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">18001247</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">
-                                                                                <span class="badge bg-success">ĐÃ DUYỆT</span>
-                                                                            </td>
-                                                                            <td style="text-align: center; vertical-align: middle;">
-                                                                                <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                                                    <i class="fas fa-eye"></i>
-                                                                                </button>
-                                                                                <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                                                    <i class="fas fa-paper-plane"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="text-align: center; vertical-align: middle;">Nguyễn Văn O</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">26/03/2002</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Nam</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">70DCHT0115</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Khá</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">Hệ thống thông tin</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">18001248</td>
-                                                                            <td style="text-align: center; vertical-align: middle;">
-                                                                                <span class="badge bg-success">ĐÃ DUYỆT</span>
-                                                                            </td>
-                                                                            <td style="text-align: center; vertical-align: middle;">
-                                                                                <button type="submit" name="add_news" class="btn btn-primary btn-sm">
-                                                                                    <i class="fas fa-eye"></i>
-                                                                                </button>
-                                                                                <button type="submit" name="delete_news_bao_quocte" class="btn btn-warning btn-sm">
-                                                                                    <i class="fas fa-paper-plane"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
+                                    <tr>
+                                        <td style="text-align: center; vertical-align: middle;">Lê Văn Khánh</td>
+                                        <td style="text-align: center; vertical-align: middle;">22/11/2001</td>
+                                        <td style="text-align: center; vertical-align: middle;">Nam</td>
+                                        <td style="text-align: center; vertical-align: middle;">70DCHT0111</td>
+                                        <td style="text-align: center; vertical-align: middle;">Giỏi</td>
+                                        <td style="text-align: center; vertical-align: middle;">Công nghệ thông tin</td>
+                                        <td style="text-align: center; vertical-align: middle;">18001244</td>
+                                        <td style="text-align: center; vertical-align: middle;">
+                                            <span class="badge bg-success">ĐÃ DUYỆT</span>
+                                        </td>
+                                        <td style="text-align: center; vertical-align: middle;">
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="le.van.khanh@gmail.com"
+                                                data-image="assets/img/avatars/11.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
+                                            </button>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; vertical-align: middle;">Nguyễn Thị Lợi</td>
+                                        <td style="text-align: center; vertical-align: middle;">23/12/2001</td>
+                                        <td style="text-align: center; vertical-align: middle;">Nữ</td>
+                                        <td style="text-align: center; vertical-align: middle;">70DCHT0112</td>
+                                        <td style="text-align: center; vertical-align: middle;">Khá</td>
+                                        <td style="text-align: center; vertical-align: middle;">An toàn thông tin</td>
+                                        <td style="text-align: center; vertical-align: middle;">18001245</td>
+                                        <td style="text-align: center; vertical-align: middle;">
+                                            <span class="badge bg-success">ĐÃ DUYỆT</span>
+                                        </td>
+                                        <td style="text-align: center; vertical-align: middle;">
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="nguyen.thi.loi@gmail.com"
+                                                data-image="assets/img/avatars/12.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
+                                            </button>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; vertical-align: middle;">Trương Văn Mạnh</td>
+                                        <td style="text-align: center; vertical-align: middle;">24/01/2002</td>
+                                        <td style="text-align: center; vertical-align: middle;">Nam</td>
+                                        <td style="text-align: center; vertical-align: middle;">70DCHT0113</td>
+                                        <td style="text-align: center; vertical-align: middle;">Trung bình</td>
+                                        <td style="text-align: center; vertical-align: middle;">Công nghệ phần mềm</td>
+                                        <td style="text-align: center; vertical-align: middle;">18001246</td>
+                                        <td style="text-align: center; vertical-align: middle;">
+                                            <span class="badge bg-success">ĐÃ DUYỆT</span>
+                                        </td>
+                                        <td style="text-align: center; vertical-align: middle;">
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="truong.van.manh@gmail.com"
+                                                data-image="assets/img/avatars/12.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
+                                            </button>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; vertical-align: middle;">Lê Thị Huyền</td>
+                                        <td style="text-align: center; vertical-align: middle;">25/02/2002</td>
+                                        <td style="text-align: center; vertical-align: middle;">Nữ</td>
+                                        <td style="text-align: center; vertical-align: middle;">70DCHT0114</td>
+                                        <td style="text-align: center; vertical-align: middle;">Giỏi</td>
+                                        <td style="text-align: center; vertical-align: middle;">Khoa học dữ liệu</td>
+                                        <td style="text-align: center; vertical-align: middle;">18001247</td>
+                                        <td style="text-align: center; vertical-align: middle;">
+                                            <span class="badge bg-success">ĐÃ DUYỆT</span>
+                                        </td>
+                                        <td style="text-align: center; vertical-align: middle;">
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="le.thi.huyen@gmail.com"
+                                                data-image="assets/img/avatars/13.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
+                                            </button>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; vertical-align: middle;">Nguyễn Văn Quyết</td>
+                                        <td style="text-align: center; vertical-align: middle;">26/03/2002</td>
+                                        <td style="text-align: center; vertical-align: middle;">Nam</td>
+                                        <td style="text-align: center; vertical-align: middle;">70DCHT0115</td>
+                                        <td style="text-align: center; vertical-align: middle;">Khá</td>
+                                        <td style="text-align: center; vertical-align: middle;">Hệ thống thông tin</td>
+                                        <td style="text-align: center; vertical-align: middle;">18001248</td>
+                                        <td style="text-align: center; vertical-align: middle;">
+                                            <span class="badge bg-success">ĐÃ DUYỆT</span>
+                                        </td>
+                                        <td style="text-align: center; vertical-align: middle;">
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#showmodal"
+                                                data-address="Trâu Quỳ, Gia Lâm, TP. Hà Nội" data-email="nguyen.van.quyet@gmail.com"
+                                                data-image="assets/img/avatars/1.jpg">
+                                                <i class="fas fa-eye"></i> <!-- Icon Hiển thị -->
+                                            </button>
+                                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalShare"
+                                                style="margin: 10px 0 10px 0">
+                                                <i class="fas fa-paper-plane"></i> <!-- Icon Gửi -->
+                                            </button>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                             <!-- End Table with stripped rows -->
-
-
+                            <h5 class="card-title" style="text-align: center;">Tải xuống dữ liệu</h5>
+                            <div style="text-align: center; gap: 20px">
+                                <button style="margin: 0 10px 0 0;" type="button" class="btn btn-outline-success btn-lg"><i class="bi bi-filetype-xlsx"></i></button>
+                                <button style="margin: 0 10px 0 10px" type="button" class="btn btn-outline-danger btn-lg"><i class="bi bi-filetype-pdf"></i></button>
+                                <button style="margin: 0 0 0 10px;" type="button" class="btn btn-outline-primary btn-lg"><i class="bi bi-filetype-docx"></i></button>
+                            </div>
                         </div>
                     </div>
 
@@ -774,26 +834,189 @@
             </div>
         </section>
 
+        <!-- Modal Xác nhận Xóa -->
+        <div class="modal fade" id="huybangtonghiep" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Xác nhận huỷ</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Huỷ bằng tốt nghiệp của sinh viên này?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn btn-danger">Đồng ý</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gửi thông tin -->
+        <div class="modal fade" id="modalShare" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Gửi thông tin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <div style="display: flex; justify-content: center; gap: 30px;">
+                        <a href="https://zaloweb.me/">
+                            <img style="width: 60px;" src="assets/img/zalo-icon.png" alt="">
+                        </a>
+                        <a href="https://www.messenger.com">
+                            <img style="width: 60px;" src="assets/img/mess-icon.png" alt="">
+                        </a>                                                                    
+                        <a href="https://mail.google.com/mail/u/0/#inbox">
+                            <img style="width: 60px;" src="assets/img/gmail.png" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/?locale=vi_VN">
+                            <img style="width: 60px;" src="assets/img/face-icon.png" alt="">
+                        </a>
+                       
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                        
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Vertically centered Modal-->
+
+        <!-- modal hiển thị bằng tốt nghiệp -->
+        <div class="modal fade" id="showmodal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Thông tin chi tiết bằng tốt nghiệp</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="display: flex; align-items: center;">
+                            <div style="flex-grow: 1; margin-top: 50px;">
+                                <p><strong>Họ và Tên:</strong> <span id="modalName"></span></p>
+                                <p><strong>Ngày sinh:</strong> <span id="modalBirthDate"></span></p>
+                                <p><strong>Giới tính:</strong> <span id="modalGender"></span></p>
+                                <p><strong>Mã sinh viên:</strong> <span id="modalStudentCode"></span></p>
+                            </div>
+                            <div>
+                                <p><strong>Ảnh đại diện</strong></p>
+                                <img id="modalImage" src="" alt="Ảnh đại diện" style="max-width: 150px; height: 150px;">
+        
+                            </div>
+        
+                        </div>
+                        <hr>
+                        <p><strong>Loại bằng:</strong> <span id="modalCertificateType"></span></p>
+                        <p><strong>Ngành học:</strong></strong> <span id="modalDuration"></span></p>
+                        <p><strong>Số hiệu:</strong> <span id="modalClassCode"></span></p>
+                        <p><strong>Trạng thái:</strong> <span class="badge bg-success">ĐÃ DUYỆT</span></p>
+                        <p><strong>Địa chỉ:</strong> <span id="modalAddress"></span></p>
+                        <p><strong>Email:</strong> <a href="#" id="modalEmail"></a></p>
+                        <div style="display: flex;justify-content: center;">
+                            <button style="margin: 0 10px 0 0;" type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-printer"></i></button>
+                            <button style="margin: 0 10px 0 0" type="button" class="btn btn-outline-danger"><i
+                                    class="bi bi-filetype-pdf"></i></button>
+                            <button style="margin: 0 0 0 0;" type="button" class="btn btn-outline-primary"><i
+                                    class="bi bi-filetype-docx"></i></button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#huybangtonghiep">Huỷ bằng</button>
+                </div>
+            </div>
+        </div><!-- End hiển thị bằng tốt nghiệp-->
+
     </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
-        <div class="copyright">
-            &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="container-sdt">
+                    <div class="sdt">
+                        Số điện thoại: (+84) 37 8976 135 / (+84) 243 854 4264
+                    </div>
+                </div>
+    
+                <div class="container-email">
+                    <div class="email">
+                        Email: congnghegtvtkhoacntt@edu.vn / dhcongnghegtvt@utt.com
+                    </div>
+                </div>
+    
+                <div class="container-dc">
+                    <div class="dc">
+                        Địa chỉ: 54 Triều Khúc, Quận Thanh Xuân, Thành phố Hà Nội /<br>
+                        278 Lam Sơn, Đồng Tâm, Vĩnh Yên, Vĩnh Phúc
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-right">
+                <div class="text-app-container">
+                    <div class="text-app" style="font-size: medium;">
+                        ĐÃ CÓ TRÊN MỌI NỀN TẢNG
+                    </div>
+                    <div class="container-app">
+                        <a href="#"><img src="assets/img/ios.png" alt="App Store"></a>
+                        <a href="#"><img src="assets/img/gg play.png" alt="Google Play"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    
+        <div class="container-copy">
+            <div class="copy">
+                Copyright © 2024 Trường Đại học Công nghệ Giao thông vận tải. All rights reserved
+            </div>
         </div>
-    </footer><!-- End Footer -->
-
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    </footer>
+    <!-- End Footer -->
 
     <!-- Vendor JS Files -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                // Lấy tất cả các nút có class btn-primary và lắng nghe sự kiện click
+                const viewButtons = document.querySelectorAll('.btn-primary');
+
+                viewButtons.forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        // Lấy các thông tin từ các thuộc tính data-* trên nút
+                        const name = button.closest('tr').children[0].textContent.trim(); // Họ tên
+                        const birthDate = button.closest('tr').children[1].textContent.trim(); // Ngày sinh
+                        const gender = button.closest('tr').children[2].textContent.trim(); // Giới tính
+                        const studentCode = button.closest('tr').children[3].textContent.trim(); // Mã sinh viên
+                        const certificateType = button.closest('tr').children[4].textContent.trim(); // Loại bằng
+                        const major = button.closest('tr').children[5].textContent.trim(); // Ngành học
+                        const classCode = button.closest('tr').children[6].textContent.trim(); // Số hiệu
+                        const status = button.closest('tr').children[7].querySelector('.badge').textContent.trim(); // Trạng thái
+                        const address = button.getAttribute('data-address'); // Địa chỉ
+                        const email = button.getAttribute('data-email'); // Email
+                        const image = button.getAttribute('data-image'); // Ảnh đại diện
+
+                        // Gán các giá trị vào modal
+                        document.getElementById('modalName').textContent = name;
+                        document.getElementById('modalBirthDate').textContent = birthDate;
+                        document.getElementById('modalGender').textContent = gender;
+                        document.getElementById('modalStudentCode').textContent = studentCode;
+                        document.getElementById('modalCertificateType').textContent = certificateType;
+                        document.getElementById('modalDuration').textContent = major;
+                        document.getElementById('modalClassCode').textContent = classCode;
+                        document.querySelector('#showmodal .badge').textContent = status; // Trạng thái
+                        document.getElementById('modalAddress').textContent = address;
+                        document.getElementById('modalEmail').textContent = email;
+                        document.getElementById('modalEmail').setAttribute('href', `mailto:${email}`);
+                        document.getElementById('modalImage').setAttribute('src', image);
+                    });
+                });
+            });
+    </script>
     <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/chart.js/chart.umd.js"></script>

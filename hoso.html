@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Hồ sơ - UTT</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="">
+                <span class="d-none d-lg-block">UTT</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <div class="search-bar">
+            <form class="search-form d-flex align-items-center" method="POST" action="#">
+                <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+                <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+            </form>
+        </div><!-- End Search Bar -->
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li><!-- End Search Icon-->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge bg-primary badge-number">4</span>
+                    </a><!-- End Notification Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                        <li class="dropdown-header">
+                            You have 4 new notifications
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-exclamation-circle text-warning"></i>
+                            <div>
+                                <h4>Lorem Ipsum</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>30 min. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-x-circle text-danger"></i>
+                            <div>
+                                <h4>Atque rerum nesciunt</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>1 hr. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-check-circle text-success"></i>
+                            <div>
+                                <h4>Sit rerum fuga</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>2 hrs. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-info-circle text-primary"></i>
+                            <div>
+                                <h4>Dicta reprehenderit</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>4 hrs. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-footer">
+                            <a href="#">Show all notifications</a>
+                        </li>
+
+                    </ul><!-- End Notification Dropdown Items -->
+
+                </li><!-- End Notification Nav -->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-chat-left-text"></i>
+                        <span class="badge bg-success badge-number">3</span>
+                    </a><!-- End Messages Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+                        <li class="dropdown-header">
+                            You have 3 new messages
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>Maria Hudson</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>4 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>Anna Nelson</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>6 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>David Muldon</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>8 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="dropdown-footer">
+                            <a href="#">Show all messages</a>
+                        </li>
+
+                    </ul><!-- End Messages Dropdown Items -->
+
+                </li><!-- End Messages Nav -->
+
+                <li class="nav-item dropdown pe-3">
+                
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="assets/img/logo.png" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">Ngô Tiến Lộc</span>
+                    </a><!-- End Profile Iamge Icon -->
+                
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6>Ngô Tiến Lộc</h6>
+                            <span>Quản lý</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="hoso.html">
+                                <i class="bi bi-person"></i>
+                                <span>Hồ sơ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="hoso.html">
+                                <i class="bi bi-gear"></i>
+                                <span>Cài đặt tài khoản</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                                <i class="bi bi-question-circle"></i>
+                                <span>Bạn cần hỗ trợ?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Đăng xuất</span>
+                            </a>
+                        </li>
+                
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="index.html">
+                    <i class="bi bi-house-door-fill"></i>
+                    <span>Trang chủ</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-mortarboard-fill"></i><span>Quản lý bằng tốt nghiệp</span><i
+                        class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="totnghiep-chuaduyet.html">
+                            <i class="bi bi-circle-fill"></i><span>Bằng tốt nghiệp chờ duyệt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="totnghiep-daduyet.html">
+                            <i class="bi bi-circle-fill"></i><span>Bằng tốt nghiệp đã duyệt</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li><!-- End Components Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#chungchi-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-patch-check-fill"></i><span>Quản lý chứng chỉ</span><i
+                        class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="chungchi-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="chungchi-chuaduyet.html">
+                            <i class="bi bi-circle-fill"></i><span>Chứng chỉ chờ duyệt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chungchi-daduyet.html">
+                            <i class="bi bi-circle-fill"></i><span>Chứng chỉ đã duyệt</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li><!-- End chungchi Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-grid-fill"></i><span>Danh mục</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="danhmuc-bangtotnghiep.html">
+                            <i class="bi bi-circle-fill"></i><span>Danh mục bằng tốt nghiệp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="danhmuc-chungchi.html">
+                            <i class="bi bi-circle-fill"></i><span>Danh mục chứng chỉ</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li><!-- End Forms Nav -->
+
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="tonghop.html">
+                    <i class="bi bi-box-seam-fill"></i>
+                    <span>Tổng hợp</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="tintuc.html">
+                    <i class="bi bi-globe"></i><span>Tin tức</span>
+                </a>
+            </li><!-- End Icons Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="lienhe.html">
+                    <i class="bi bi-telephone"></i><span>Liên hệ</span>
+                </a>
+            </li><!-- End Icons Nav -->
+
+            <hr>
+            <li class="nav-item"></li>
+                <a class="nav-link" href="hoso.html">
+                    <i class="bi bi-person-lines-fill"></i><span>Hồ sơ</span>
+                </a>
+            </li><!-- End Icons Nav -->
+            <li class="nav-item"></li>
+                <a class="nav-link collapsed" href="pages-faq.html">
+                    <i class="bi bi-patch-question-fill"></i><span>Hướng dẫn sử dụng</span>
+                </a>
+            </li><!-- End Icons Nav -->
+
+        </ul>
+
+    </aside><!-- End Sidebar-->
+
+
+    <!-- ======= main ======= -->
+    <main id="main" class="main">
+        <div class="pagetitle">
+            <h1>Quản lý bằng tốt nghiệp, chứng chỉ của trường đại học</h1>
+            <!-- Slides with indicators -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin: 10px 0 10px 0">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/banner-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/banner-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/banner-3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div><!-- End Slides with indicators -->
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Hồ sơ</a></li>
+                    <li class="breadcrumb-item active">Quản lý thông tin</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <section class="section profile">
+            <div class="row">
+                <div class="col-xl-4">
+
+                    <div class="card">
+                        <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+
+                            <img src="assets/img/logo.png" alt="Profile" class="rounded-circle">
+                            <h2>
+                                Ngô Tiến Lộc
+                            </h2>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-8">
+
+                    <div class="card">
+                        <div class="card-body pt-3">
+                            <!-- Bordered Tabs -->
+                            <ul class="nav nav-tabs nav-tabs-bordered">
+
+                                <li class="nav-item">
+                                    <button class="nav-link active" data-bs-toggle="tab"
+                                        data-bs-target="#profile-overview">Tổng quan</button>
+                                </li>
+
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Sửa
+                                        thông tin</button>
+                                </li>
+
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-settings">Cài
+                                        đặt</button>
+                                </li>
+
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab"
+                                        data-bs-target="#profile-change-password">Đổi mật khẩu</button>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content pt-2">
+
+                                <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                                    
+                                
+                                    <h5 class="card-title">Thông tin chi tiết</h5>
+                                
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 label ">Họ và tên</div>
+                                        <div class="col-lg-9 col-md-8">Ngô Tiến Lộc</div>
+                                    </div>
+                                
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 label">Đơn vị</div>
+                                        <div class="col-lg-9 col-md-8">Trường ĐH Công nghệ Giao thông vận tải</div>
+                                    </div>
+                                
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 label">Chức vụ</div>
+                                        <div class="col-lg-9 col-md-8">Quản lý</div>
+                                    </div>                            
+                                
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 label">Địa chỉ</div>
+                                        <div class="col-lg-9 col-md-8">54 Triều Khúc, Quận Thanh Xuân, Thành phố Hà Nội</div>
+                                    </div>
+                                
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 label">Số điện thoại</div>
+                                        <div class="col-lg-9 col-md-8">(+84) 37 8976 135</div>
+                                    </div>
+                                
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 label">Email</div>
+                                        <div class="col-lg-9 col-md-8">congnghegtvtkhoacntt@edu.vn</div>
+                                    </div>
+                                
+                                </div>
+
+                                <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+
+                                    <!-- Sửa Thông tin Form -->
+                                    <form method="POST" action="update_profile.php">
+                                        <div class="row mb-3">
+                                            <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Ảnh hồ
+                                                sơ</label>
+                                            <div class="col-md-8 col-lg-9">
+                                                <img src="assets/img/logo.png" alt="Profile">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Họ và
+                                                tên</label>
+                                            <div class="col-md-8 col-lg-9">
+                                                <input name="fullName" type="text" class="form-control" id="fullName"
+                                                    value="Ngô Tiến Lộc">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <label for="company" class="col-md-4 col-lg-3 col-form-label">Đơn vị</label>
+                                            <div class="col-md-8 col-lg-9">
+                                                <input name="company" type="text" class="form-control" id="company"
+                                                    value="Trường ĐH Công nghệ Giao thông vận tải">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <label for="Job" class="col-md-4 col-lg-3 col-form-label">Chức vụ</label>
+                                            <div class="col-md-8 col-lg-9">
+                                                <input name="job" type="text" class="form-control" id="Job"
+                                                    value="Quản lý">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <label for="Address" class="col-md-4 col-lg-3 col-form-label">Địa
+                                                chỉ</label>
+                                            <div class="col-md-8 col-lg-9">
+                                                <input name="address" type="text" class="form-control" id="Address"
+                                                    value="54 Triều Khúc, Quận Thanh Xuân, Thành phố Hà Nội">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Số điện
+                                                thoại</label>
+                                            <div class="col-md-8 col-lg-9">
+                                                <input name="phone" type="text" class="form-control" id="Phone"
+                                                    value="(+84) 37 8976 135">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                                            <div class="col-md-8 col-lg-9">
+                                                <input name="email" type="email" class="form-control" id="Email"
+                                                    value="congnghegtvtkhoacntt@edu.vn">
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary">Lưu thông tin</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                                <div class="tab-pane fade pt-3" id="profile-settings">
+
+                                    <!-- Settings Form -->
+                                    <form>
+
+                                        <div class="row mb-3">
+                                            <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Thông báo
+                                                email</label>
+                                            <div class="col-md-8 col-lg-9">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="changesMade"
+                                                        checked>
+                                                    <label class="form-check-label" for="changesMade">
+                                                        Nhận thông báo cho email về tin tức mới nhất
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="newProducts"
+                                                        checked>
+                                                    <label class="form-check-label" for="newProducts">
+                                                        Cho phép nhận thông báo thiết bị
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="proOffers">
+                                                    <label class="form-check-label" for="proOffers">
+                                                        Cho phép truy cập thông tin dữ liệu
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="securityNotify"
+                                                        checked disabled>
+                                                    <label class="form-check-label" for="securityNotify">
+                                                        Cảnh báo bảo mật
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+                                        </div>
+                                    </form><!-- End settings Form -->
+
+                                </div>
+
+                                <div class="tab-pane fade pt-3" id="profile-change-password">
+                                    <!-- Change Password Form -->
+                                    <form id="changePasswordForm">
+                                        <div class="row mb-3">
+                                            <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Mật
+                                                khẩu cũ</label>
+                                            <div class="col-md-8 col-lg-9">
+                                                <input type="password" name="currentPassword" class="form-control"
+                                                    id="currentPassword" required>
+                                                <div id="current-password-error" class="invalid-feedback"
+                                                    style="display: none;">
+                                                    Mật khẩu không đúng!
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">Mật khẩu
+                                                mới</label>
+                                            <div class="col-md-8 col-lg-9">
+                                                <input type="password" name="newpassword" class="form-control"
+                                                    id="newpassword" required>
+                                                <div id="invalid-feedback" class="invalid-feedback"
+                                                    style="display: none;">
+                                                    Vui lòng nhập mật khẩu!
+                                                </div>
+                                                <div id="password-requirements" class="invalid-feedback"
+                                                    style="display: none;">
+                                                    Mật khẩu phải có tối thiểu 8 ký tự, bao gồm chữ cái in thường, chữ
+                                                    cái in hoa, và số.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Nhập lại
+                                                mật khẩu mới</label>
+                                            <div class="col-md-8 col-lg-9">
+                                                <input name="renewpassword" type="password" class="form-control"
+                                                    id="renewPassword" required>
+                                                <div id="renew-password-error" class="text-danger"
+                                                    style="display: none;">Mật khẩu không khớp!</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary">Thay đổi mật khẩu</button>
+                                        </div>
+
+                                        <div id="message" class="mt-3 text-center"></div>
+                                    </form>
+
+                                </div><!-- End Bordered Tabs -->
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+
+    </main><!-- End #main -->
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="container-sdt">
+                    <div class="sdt">
+                        Số điện thoại: (+84) 37 8976 135 / (+84) 243 854 4264
+                    </div>
+                </div>
+    
+                <div class="container-email">
+                    <div class="email">
+                        Email: congnghegtvtkhoacntt@edu.vn / dhcongnghegtvt@utt.com
+                    </div>
+                </div>
+    
+                <div class="container-dc">
+                    <div class="dc">
+                        Địa chỉ: 54 Triều Khúc, Quận Thanh Xuân, Thành phố Hà Nội /<br>
+                        278 Lam Sơn, Đồng Tâm, Vĩnh Yên, Vĩnh Phúc
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-right">
+                <div class="text-app-container">
+                    <div class="text-app" style="font-size: medium;">
+                        ĐÃ CÓ TRÊN MỌI NỀN TẢNG
+                    </div>
+                    <div class="container-app">
+                        <a href="#"><img src="assets/img/ios.png" alt="App Store"></a>
+                        <a href="#"><img src="assets/img/gg play.png" alt="Google Play"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-copy">
+            <div class="copy">
+                Copyright © 2024 Trường Đại học Công nghệ Giao thông vận tải. All rights reserved
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Xử lý submit form thay đổi mật khẩu
+            $('#changePasswordForm').on('submit', function (e) {
+                e.preventDefault(); // Ngăn chặn form submit mặc định
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'change_password.php', // File PHP xử lý cả thay đổi và kiểm tra mật khẩu
+                    data: $(this).serialize() + '&action=changePassword', // Thêm action để phân biệt yêu cầu
+                    success: function (response) {
+                        $('#message').html(response); // Hiển thị thông báo từ PHP trong div #message
+                    },
+                    error: function () {
+                        $('#message').html('Có lỗi xảy ra, vui lòng thử lại.'); // Thông báo lỗi khi AJAX thất bại
+                    }
+                });
+            });
+
+            // Kiểm tra yêu cầu mật khẩu mới
+            $('#newpassword').on('input', function () {
+                var inputField = $(this);
+                var value = inputField.val();
+                var invalidFeedback = $('#invalid-feedback');
+                var passwordRequirements = $('#password-requirements');
+
+                // Kiểm tra mật khẩu
+                var hasLowercase = /[a-z]/.test(value);
+                var hasUppercase = /[A-Z]/.test(value);
+                var hasNumber = /[0-9]/.test(value);
+                var isValidLength = value.length >= 8;
+
+                if (value === '') {
+                    // Trường trống
+                    invalidFeedback.show().text("Vui lòng nhập mật khẩu!");
+                    passwordRequirements.hide();
+                    inputField[0].setCustomValidity("Vui lòng nhập mật khẩu!");
+                } else if (!isValidLength || !hasLowercase || !hasUppercase || !hasNumber) {
+                    // Mật khẩu không hợp lệ
+                    invalidFeedback.hide();
+                    passwordRequirements.show();
+                    inputField[0].setCustomValidity("Mật khẩu không hợp lệ!");
+                } else {
+                    // Mật khẩu hợp lệ
+                    invalidFeedback.hide();
+                    passwordRequirements.hide();
+                    inputField[0].setCustomValidity("");
+                }
+
+                inputField[0].reportValidity();
+            });
+
+            // Xử lý kiểm tra mật khẩu cũ
+            $('#currentPassword').on('blur', function () {
+                var currentPassword = $(this).val();
+                var errorFeedback = $('#current-password-error');
+
+                if (currentPassword !== '') {
+                    // Gửi yêu cầu AJAX để kiểm tra mật khẩu cũ
+                    $.ajax({
+                        type: 'POST',
+                        url: 'change_password.php', // Sử dụng cùng file PHP đã gộp
+                        data: { currentPassword: currentPassword, action: 'checkCurrentPassword' }, // Thêm action để phân biệt yêu cầu
+                        success: function (response) {
+                            if (response.trim() === 'invalid') {
+                                // Nếu mật khẩu không đúng, hiển thị thông báo lỗi
+                                errorFeedback.show().text("Mật khẩu không đúng!");
+                                $('#currentPassword')[0].setCustomValidity("Mật khẩu không đúng!");
+                            } else {
+                                // Nếu mật khẩu đúng, ẩn thông báo lỗi
+                                errorFeedback.hide();
+                                $('#currentPassword')[0].setCustomValidity("");
+                            }
+                            $('#currentPassword')[0].reportValidity();
+                        },
+                        error: function () {
+                            errorFeedback.show().text("Có lỗi xảy ra, vui lòng thử lại.");
+                        }
+                    });
+                } else {
+                    errorFeedback.hide();
+                    $('#currentPassword')[0].setCustomValidity("");
+                }
+            });
+
+            // Kiểm tra khớp giữa mật khẩu mới và xác nhận mật khẩu
+            $('#renewPassword').on('input', function () {
+                var newPassword = $('#newpassword').val();
+                var renewPassword = $(this).val();
+                var errorFeedback = $('#renew-password-error');
+
+                if (renewPassword !== newPassword) {
+                    // Nếu mật khẩu không khớp
+                    errorFeedback.show().text("Mật khẩu không khớp!");
+                    $(this)[0].setCustomValidity("Mật khẩu không khớp!");
+                } else {
+                    // Nếu mật khẩu khớp
+                    errorFeedback.hide();
+                    $(this)[0].setCustomValidity("");
+                }
+                $(this)[0].reportValidity();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

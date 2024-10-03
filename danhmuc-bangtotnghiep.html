@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Bằng tốt nghiệp chưa duyệt - UTT</title>
+    <title>Danh mục bằng tốt nghiệp - UTT</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -211,23 +211,23 @@
                 </li><!-- End Messages Nav -->
 
                 <li class="nav-item dropdown pe-3">
-
+                
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+                        <img src="assets/img/logo.png" alt="Profile" class="rounded-circle">
                         <span class="d-none d-md-block dropdown-toggle ps-2">Ngô Tiến Lộc</span>
                     </a><!-- End Profile Iamge Icon -->
-
+                
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
-                            <h6>Kevin Anderson</h6>
-                            <span>Web Designer</span>
+                            <h6>Ngô Tiến Lộc</h6>
+                            <span>Quản lý</span>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-
+                
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                            <a class="dropdown-item d-flex align-items-center" href="hoso.html">
                                 <i class="bi bi-person"></i>
                                 <span>Hồ sơ</span>
                             </a>
@@ -235,9 +235,9 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-
+                
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                            <a class="dropdown-item d-flex align-items-center" href="hoso.html">
                                 <i class="bi bi-gear"></i>
                                 <span>Cài đặt tài khoản</span>
                             </a>
@@ -245,7 +245,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-
+                
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
                                 <i class="bi bi-question-circle"></i>
@@ -255,14 +255,14 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-
+                
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="#">
                                 <i class="bi bi-box-arrow-right"></i>
                                 <span>Đăng xuất</span>
                             </a>
                         </li>
-
+                
                     </ul><!-- End Profile Dropdown Items -->
                 </li><!-- End Profile Nav -->
 
@@ -278,7 +278,7 @@
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="index.html">
-                    <i class="bi bi-house-door"></i>
+                    <i class="bi bi-house-door-fill"></i>
                     <span>Trang chủ</span>
                 </a>
             </li><!-- End Dashboard Nav -->
@@ -351,17 +351,27 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="tintuc.html">
+                <a class="nav-link collapsed" href="tintuc.html">
                     <i class="bi bi-globe"></i><span>Tin tức</span>
                 </a>
             </li><!-- End Icons Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="lienhe.html">
+                <a class="nav-link collapsed" href="lienhe.html">
                     <i class="bi bi-telephone"></i><span>Liên hệ</span>
                 </a>
             </li><!-- End Icons Nav -->
-
+            <hr>
+            <li class="nav-item"></li>
+                <a class="nav-link collapsed" href="hoso.html">
+                <i class="bi bi-person-lines-fill"></i><span>Hồ sơ</span>
+                </a>
+            </li><!-- End Icons Nav -->
+            <li class="nav-item"></li>
+                <a class="nav-link collapsed" href="pages-faq.html">
+                    <i class="bi bi-patch-question-fill"></i><span>Hướng dẫn sử dụng</span>
+                </a>
+            </li><!-- End Icons Nav -->
 
 
         </ul>
@@ -409,7 +419,7 @@
             </div><!-- End Slides with indicators -->
             <nav>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Danh mục</a></li>
+                    <li class="breadcrumb-item"><a href="#">Danh mục</a></li>
                     <li class="breadcrumb-item active">Danh mục bằng tốt nghiệp</li>
                 </ol>
             </nav>
@@ -445,112 +455,92 @@
                                         <thead>
                                             <tr>
                                                 <th style="text-align: center; vertical-align: middle;">STT</th>
-                                                <th style="text-align: center; vertical-align: middle;">Danh mục</th>                                                                                           
+                                                <th style="text-align: center; vertical-align: middle;">Danh mục</th>
                                                 <th style="text-align: center; vertical-align: middle;">Hành động</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td style="text-align: center; vertical-align: middle;">01</td>
-                                                <td style="text-align: center; vertical-align: middle;">Họ và tên</td>                                                                                                
+                                                <td style="text-align: center; vertical-align: middle;" class="editable">Họ và tên</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                        <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                                    </button>
-                                                    <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                                    <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm"
+                                                        onclick="editRow(this)">
                                                         <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                                     </button>
-                                                    <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                         <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                                     </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td style="text-align: center; vertical-align: middle;">02</td>
-                                                <td style="text-align: center; vertical-align: middle;">Ngày sinh</td>
+                                                <td style="text-align: center; vertical-align: middle;" class="editable">Ngày sinh</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                        <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                                    </button>
-                                                    <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                                    <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                         <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                                     </button>
-                                                    <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                         <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                                     </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td style="text-align: center; vertical-align: middle;">03</td>
-                                                <td style="text-align: center; vertical-align: middle;">Giới tính</td>
+                                                <td style="text-align: center; vertical-align: middle;" class="editable">Giới tính</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                        <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                                    </button>
-                                                    <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                                    <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                         <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                                     </button>
-                                                    <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                         <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                                     </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td style="text-align: center; vertical-align: middle;">04</td>
-                                                <td style="text-align: center; vertical-align: middle;">Mã sinh viên</td>
+                                                <td style="text-align: center; vertical-align: middle;" class="editable">Mã sinh viên</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                        <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                                    </button>
-                                                    <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                                    <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                         <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                                     </button>
-                                                    <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                         <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                                     </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td style="text-align: center; vertical-align: middle;">05</td>
-                                                <td style="text-align: center; vertical-align: middle;">Loại bằng</td>
+                                                <td style="text-align: center; vertical-align: middle;" class="editable">Loại bằng</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                        <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                                    </button>
-                                                    <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                                    <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                         <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                                     </button>
-                                                    <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                         <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                                     </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td style="text-align: center; vertical-align: middle;">06</td>
-                                                <td style="text-align: center; vertical-align: middle;">Ngành học</td>
+                                                <td style="text-align: center; vertical-align: middle;" class="editable">Ngành học</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                        <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                                    </button>
-                                                    <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                                    <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                         <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                                     </button>
-                                                    <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                         <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                                     </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td style="text-align: center; vertical-align: middle;">07</td>
-                                                <td style="text-align: center; vertical-align: middle;">Số hiệu</td>
+                                                <td style="text-align: center; vertical-align: middle;" class="editable">Số hiệu</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                        <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                                    </button>
-                                                    <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                                    <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                         <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                                     </button>
-                                                    <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                         <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                                     </button>
                                                 </td>
@@ -572,120 +562,101 @@
                                     <tbody>
                                         <tr>
                                             <td style="text-align: center; vertical-align: middle;">01</td>
-                                            <td style="text-align: center; vertical-align: middle;">Họ và tên</td>
-                                            <td style="text-align: center; vertical-align: middle;">
-                                                <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                    <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                                </button>
-                                                <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                            <td style="text-align: center; vertical-align: middle;" class="editable">Họ và tên</td>
+                                            <td style="text-align: center; vertical-align: middle;">                                                
+                                                <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                     <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                                 </button>
-                                                <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                     <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                                 </button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="text-align: center; vertical-align: middle;">02</td>
-                                            <td style="text-align: center; vertical-align: middle;">Ngày sinh</td>
+                                            <td style="text-align: center; vertical-align: middle;" class="editable">Ngày sinh</td>
                                             <td style="text-align: center; vertical-align: middle;">
-                                                <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                    <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                                </button>
-                                                <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                               
+                                                <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                     <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                                 </button>
-                                                <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                     <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                                 </button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="text-align: center; vertical-align: middle;">03</td>
-                                            <td style="text-align: center; vertical-align: middle;">Giới tính</td>
+                                            <td style="text-align: center; vertical-align: middle;" class="editable">Giới tính</td>
                                             <td style="text-align: center; vertical-align: middle;">
-                                                <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                    <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                                </button>
-                                                <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                               
+                                                <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                     <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                                 </button>
-                                                <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                     <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                                 </button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="text-align: center; vertical-align: middle;">04</td>
-                                            <td style="text-align: center; vertical-align: middle;">Mã sinh viên</td>
+                                            <td style="text-align: center; vertical-align: middle;" class="editable">Mã sinh viên</td>
                                             <td style="text-align: center; vertical-align: middle;">
-                                                <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                    <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                                </button>
-                                                <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                               
+                                                <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                     <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                                 </button>
-                                                <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                     <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                                 </button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="text-align: center; vertical-align: middle;">05</td>
-                                            <td style="text-align: center; vertical-align: middle;">Loại bằng</td>
+                                            <td style="text-align: center; vertical-align: middle;" class="editable">Loại bằng</td>
                                             <td style="text-align: center; vertical-align: middle;">
-                                                <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                    <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                                </button>
-                                                <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                                
+                                                <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                     <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                                 </button>
-                                                <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                     <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                                 </button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="text-align: center; vertical-align: middle;">06</td>
-                                            <td style="text-align: center; vertical-align: middle;">Ngành học</td>
+                                            <td style="text-align: center; vertical-align: middle;" class="editable">Ngành học</td>
                                             <td style="text-align: center; vertical-align: middle;">
-                                                <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                    <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                                </button>
-                                                <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                                
+                                                <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                     <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                                 </button>
-                                                <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                     <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                                 </button>
                                             </td>
                                         </tr>
                                         <tr>
                                         <td style="text-align: center; vertical-align: middle;">07</td>
-                                        <td style="text-align: center; vertical-align: middle;">Số hiệu</td>
+                                        <td style="text-align: center; vertical-align: middle;" class="editable">Số hiệu</td>
                                         <td style="text-align: center; vertical-align: middle;">
-                                            <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                            </button>
-                                            <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                            <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                 <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                             </button>
-                                            <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                 <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                             </button>
                                         </td>
                                         </tr>
                                         <tr>
                                         <td style="text-align: center; vertical-align: middle;">08</td>
-                                        <td style="text-align: center; vertical-align: middle;">Trạng thái</td>
-                                        <td style="text-align: center; vertical-align: middle;">
-                                            <button type="submit" name="add_news" class="btn btn-success btn-sm">
-                                                <i class="fas fa-plus"></i> <!-- Icon Thêm -->
-                                            </button>
-                                            <button type="submit" name="edit_news" class="btn btn-warning btn-sm">
+                                        <td style="text-align: center; vertical-align: middle;" class="editable">Trạng thái</td>
+                                        <td style="text-align: center; vertical-align: middle;">                                            
+                                            <button style="margin-right: 10px;" type="button" class="btn btn-warning btn-sm" onclick="editRow(this)">
                                                 <i class="fas fa-edit"></i> <!-- Icon Sửa -->
                                             </button>
-                                            <button type="submit" name="delete_news_bao_quocte" class="btn btn-danger btn-sm">
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#huydanhmuctotnghiep">
                                                 <i class="fas fa-trash"></i> <!-- Icon Xóa -->
                                             </button>
                                         </td>
@@ -694,35 +665,137 @@
                                 </table>
                                 <!-- End Table with stripped rows -->
                                 </div>                                
-                            </div><!-- End Default Tabs -->
-
+                            </div><!-- End Default Tabs -->                            
+                            <div style="text-align: center; gap: 20px">                                
+                                <button style="margin-top: 20px;" type="button" class="btn btn-outline-primary btn-lg">Thêm danh mục</button>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
         </section>
+        <!-- Modal Xác nhận Xóa -->
+        <div class="modal fade" id="huydanhmuctotnghiep" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Xác nhận xoá</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Bạn muốn xoá danh mục này?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn btn-danger">Đồng ý</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+
+       <script>
+        let currentRow = null; // Biến lưu giữ hàng đang chỉnh sửa
+        let currentInput = null; // Biến lưu giữ ô nhập liệu hiện tại
+
+        function editRow(button) {
+            const row = button.closest("tr"); // Lấy hàng tương ứng với nút đã nhấn
+            const categoryCell = row.querySelector(".editable"); // Lấy ô danh mục
+
+            // Nếu đã có ô nhập liệu đang mở, không làm gì cả
+            if (currentInput && currentRow !== row) {
+                // Lưu giá trị trước đó
+                saveEdit(currentRow.querySelector(".editable"), currentInput.value);
+            }
+
+            // Nếu đã có hàng đang chỉnh sửa, lưu giá trị và trả lại ô
+            if (currentRow === row) {
+                saveEdit(categoryCell, currentInput.value);
+                return;
+            }
+
+            const currentValue = categoryCell.innerText; // Lưu giá trị hiện tại
+
+            // Tạo ô nhập liệu
+            const input = document.createElement("input");
+            input.type = "text";
+            input.value = currentValue;
+            categoryCell.innerHTML = ""; // Xóa nội dung ô
+            categoryCell.appendChild(input);
+            input.focus();
+            currentInput = input; // Lưu ô nhập liệu hiện tại
+            currentRow = row; // Lưu hàng đang chỉnh sửa
+
+            // Lắng nghe sự kiện khi người dùng nhấn Enter
+            input.addEventListener("keypress", function (event) {
+                if (event.key === "Enter") {
+                    saveEdit(categoryCell, input.value);
+                }
+            });
+
+            // Lắng nghe sự kiện khi người dùng nhấn ra ngoài ô nhập liệu
+            input.addEventListener("blur", function () {
+                saveEdit(categoryCell, input.value);
+            });
+        }
+
+        function saveEdit(cell, newValue) {
+            cell.innerHTML = newValue; // Cập nhật giá trị ô
+            currentRow = null; // Đặt lại biến hàng đang chỉnh sửa
+            currentInput = null; // Đặt lại biến ô nhập liệu hiện tại
+        }
+    </script>
     </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
-        <div class="copyright">
-            &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="container-sdt">
+                    <div class="sdt">
+                        Số điện thoại: (+84) 37 8976 135 / (+84) 243 854 4264
+                    </div>
+                </div>
+    
+                <div class="container-email">
+                    <div class="email">
+                        Email: congnghegtvtkhoacntt@edu.vn / dhcongnghegtvt@utt.com
+                    </div>
+                </div>
+    
+                <div class="container-dc">
+                    <div class="dc">
+                        Địa chỉ: 54 Triều Khúc, Quận Thanh Xuân, Thành phố Hà Nội /<br>
+                        278 Lam Sơn, Đồng Tâm, Vĩnh Yên, Vĩnh Phúc
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-right">
+                <div class="text-app-container">
+                    <div class="text-app" style="font-size: medium;">
+                        ĐÃ CÓ TRÊN MỌI NỀN TẢNG
+                    </div>
+                    <div class="container-app">
+                        <a href="#"><img src="assets/img/ios.png" alt="App Store"></a>
+                        <a href="#"><img src="assets/img/gg play.png" alt="Google Play"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    
+        <div class="container-copy">
+            <div class="copy">
+                Copyright © 2024 Trường Đại học Công nghệ Giao thông vận tải. All rights reserved
+            </div>
         </div>
-    </footer><!-- End Footer -->
-
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    </footer>
+    <!-- End Footer -->
 
     <!-- Vendor JS Files -->
+    <!-- Thêm một đoạn script để xử lý sự kiện click -->
     <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/chart.js/chart.umd.js"></script>

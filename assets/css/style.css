@@ -1229,20 +1229,102 @@ h6 {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  padding: 20px 0;
   font-size: 14px;
   transition: all 0.3s;
-  border-top: 1px solid #cddfff;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--Periwinkle, #CDDFFF);
+  background-color: #f5f7fa;
+  /* Màu nền tùy chọn */
+  padding: 20px 50px;
 }
 
-.footer .copyright {
-  text-align: center;
-  color: #012970;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.footer .credits {
-  padding-top: 5px;
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footer-left {
+  margin-right: 20px;
+}
+
+.container-sdt,
+.container-email,
+.container-dc {
+  margin-bottom: 10px;
+}
+
+.sdt,
+.email,
+.dc {
+  color: var(--Midnight-Blue, #012970);
+  font-family: "Open Sans";
+  line-height: 21px;
+}
+
+.footer-right {
+  align-items: flex-end;
+}
+
+.container-textapp {
+  margin-bottom: 10px;
+}
+
+.text-app {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--Midnight-Blue, #012970);
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.container-app {
+  display: flex;
+  justify-content: center;
+  /* Căn các phần tử về phía phải */
+  width: 100%;
+  gap: 10px;
+}
+
+.container-app a {
+  display: block;
+}
+
+.container-app img {
+  width: 150px;
+  /* Điều chỉnh kích thước ảnh theo ý muốn */
+}
+
+.container-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid var(--Periwinkle, #CDDFFF);
+  margin-top: 20px;
+
+}
+
+.copy {
+  color: var(--Midnight-Blue, #012970);
+  text-align: center;
+
+  /* Open Sans/Regular 13 */
+  font-family: "Open Sans";
   font-size: 13px;
-  color: #012970;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px;
+  /* 150% */
 }
+
+/**/
